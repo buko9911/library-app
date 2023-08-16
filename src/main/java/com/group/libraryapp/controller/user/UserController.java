@@ -5,6 +5,7 @@ import com.group.libraryapp.dto.user.request.UserCreatRequest;
 import com.group.libraryapp.dto.user.request.UserUpdateRequest;
 import com.group.libraryapp.service.user.UserServiceV1;
 import com.group.libraryapp.service.user.UserServiceV2;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,6 +16,7 @@ public class UserController {
 
     private final UserServiceV2 userService;
 
+    @Autowired
     public UserController(UserServiceV2 userService){//얘는 언제 시행??
         this.userService = userService;
     }
