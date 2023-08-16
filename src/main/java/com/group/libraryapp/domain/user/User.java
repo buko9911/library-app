@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 @Entity
+@Table(name="member")
 public class User {
 
     @Id
