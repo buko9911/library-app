@@ -1,7 +1,7 @@
 spring:
   config:
     activate:
-      on-profile: local
+      on-profile:  local
   datasource:
     url: "jdbc:h2:mem:library;MODE=MYSQL;NON_KEYWORDS=USER"
     username: "sa"
@@ -25,13 +25,11 @@ spring:
   config:
     activate:
       on-profile: dev
-
   datasource:
     url: "jdbc:mysql://localhost/library"
     username: "root"
     password: "Abcd1234!"
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
     hibernate:
       ddl-auto: none
